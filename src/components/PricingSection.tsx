@@ -33,11 +33,14 @@ const PricingPlan: React.FC<PlanProps> = ({ name, price, description, features, 
           </li>
         ))}
       </ul>
-      <button className={`w-full py-3 rounded-lg font-medium transition-all duration-300 ${
-        isPopular 
-          ? 'bg-[#f15a24] text-white hover:bg-[#d94e1f]' 
-          : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-      }`}>
+      <button 
+        onClick={() => window.location.href = `/signup?plan=${encodeURIComponent(name.toLowerCase())}`}
+        className={`w-full py-3 rounded-lg font-medium transition-all duration-300 ${
+          isPopular 
+            ? 'bg-[#f15a24] text-white hover:bg-[#d94e1f]' 
+            : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+        }`}
+      >
         Get Started
       </button>
     </div>
