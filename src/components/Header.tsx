@@ -54,7 +54,10 @@ const Header: React.FC = () => {
           </div>
           
           <div className="hidden md:block">
-            <button className="bg-[#f15a24] hover:bg-[#d94e1f] text-white font-medium py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+            <button 
+              onClick={() => navigate('/signup')} 
+              className="bg-[#f15a24] hover:bg-[#d94e1f] text-white font-medium py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
               Get Started
             </button>
           </div>
