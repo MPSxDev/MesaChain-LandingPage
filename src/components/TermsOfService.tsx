@@ -106,9 +106,11 @@ const TermsOfService: React.FC = () => {
               <p className="text-gray-600">
                 For any questions about these Terms, please contact us at:
                 <br />
-                Email: legal@mesachain.com
+                Email: <a href="mailto:legal@mesachain.com" className="text-blue-600 hover:underline">
+                  legal@mesachain.com
+                </a>
                 <br />
-                Address: [Your Company Address]
+                Address: 1234 MesaChain Blvd, Suite 100, Springfield, USA
               </p>
             </section>
           </div>
