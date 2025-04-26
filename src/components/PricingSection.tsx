@@ -119,7 +119,6 @@ const PricingSection: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-        <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">
             Need a custom solution for your specific needs?
           </p>
