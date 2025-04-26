@@ -119,8 +119,14 @@ const PricingSection: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-4">Need a custom solution for your specific needs?</p>
-          <button className="bg-transparent hover:bg-gray-100 text-gray-800 font-medium py-2 px-6 border border-gray-300 rounded-full transition-all duration-300">
+        <div className="mt-12 text-center">
+          <p className="text-gray-600 mb-4">
+            Need a custom solution for your specific needs?
+          </p>
+          <button
+            onClick={() => window.location.href = '/contact'}
+            className="bg-transparent hover:bg-gray-100 text-gray-800 font-medium py-2 px-6 border border-gray-300 rounded-full transition-all duration-300"
+          >
             Contact Sales
           </button>
         </div>
